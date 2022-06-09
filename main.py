@@ -164,7 +164,6 @@ if __name__ == '__main__':
 
             if delta == 6:
                 for i in range(numFCM):
-                    # 循环读取文件
                     data_tmp = sio.loadmat(filename + str(i + 1) + '.mat')
                     data = data_tmp['BestNN']
                     candidate_FCM.append(data)
