@@ -142,7 +142,6 @@ if __name__ == '__main__':
             numFCM = 50 # 10,20,30,40,50
             #
             for i in range(numFCM):
-                # 循环读取文件
                 data_tmp = sio.loadmat(filename + str(i + 1) + '.mat')
                 data = data_tmp['BestNN']
                 candidate_FCM.append(data)
