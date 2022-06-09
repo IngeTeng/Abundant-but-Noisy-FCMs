@@ -30,8 +30,6 @@ def cal_SS_Mean(BestNN,NN):
 def cal_AUC_macro(label, y_score,  n_classes = 3):
 
     #label=[-1,0,1]
-    #y_score={[0.2,0,0.8],[],[]}每个元素对三个标签的归属度
-    # one vs rest方式计算每个类别的TPR/FPR以及AUC
     label = label_binarize(label, classes=[-1, 0, 1])
     fpr = dict()
     tpr = dict()
@@ -43,7 +41,6 @@ def cal_AUC_macro(label, y_score,  n_classes = 3):
         roc_auc[i] = auc(fpr[i], tpr[i])
 
     # Compute micro-average ROC curve and ROC area
-    # 微平均方式计算TPR/FPR，最后得到AUC
     fpr["micro"], tpr["micro"], _ = roc_curve(label.ravel(), y_score.ravel())
     roc_auc["micro"] = auc(fpr["micro"], tpr["micro"])
     # AUC = roc_auc["micro"]
