@@ -5,4 +5,4 @@ paper：[https://ieeexplore.ieee.org/abstract/document/10495183](https://ieeexpl
 
 code：[https://github.com/IngeTeng/Abundant-but-Noisy-FCMs](https://github.com/IngeTeng/Abundant-but-Noisy-FCMs)
 
-See details: [CDFCM](https://github.com/IngeTeng/Abundant-but-Noisy-FCMs/CDFCM.html)
+See details: [CDFCM](https://github.com/IngeTeng/Abundant-but-Noisy-FCMs/blob/main/CDFCM.html)
